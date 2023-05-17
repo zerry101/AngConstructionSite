@@ -1,7 +1,17 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
 
 *{
   font-family: 'Montserrat', sans-serif;
+  --primary-color:#fdf8f1;
+  --secondary-color:#e07372;
 }
+
+
+.bg-prim{
+background-color: var(--primary-color);
+}
+
+
+
