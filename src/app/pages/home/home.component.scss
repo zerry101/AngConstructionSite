@@ -1,61 +1,85 @@
-div{
+div {
   justify-content: center;
 }
 
-.home-header{
+.home-header {
   justify-content: center;
   text-align: center;
   font-size: 3em;
 }
 
-.rates{
-justify-content: center;
-text-align: center;
-margin-top:2.5em ;
-font-weight: bolder;
+.rates {
+  justify-content: center;
+  text-align: center;
+  margin-top: 2.5em;
+  font-weight: bolder;
 }
 
-.card-img-top{
+.card-img-top {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.card{
-  padding: 0px  ;
+.intro-btn {
+  width: 250px;
+  height: 50px;
+  color: var(--secondary-color);
+  background-color: white;
+  border: solid var(--secondary-color);
+  // size: 2px;
+  text-transform: uppercase;
+  margin: auto;
+  font-size: .8em;
+}
+
+
+
+.intro-btn:hover {
+  color: white;
+  background-color: var(--secondary-color);
+}
+
+.card {
+  padding: 0px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: none;
 }
 
-.card-title{
+.card-title {
   font-weight: bolder;
 }
 
-.team-header{
+.team-header {
   text-align: center;
 }
 
-.team-card-img-top{
+.team-card-img-top {
   padding: 40px;
   border-radius: 50px;
-  border:  black 1px;
+  border: black 1px;
 }
 
-.btn-bg{
+.btn-bg {
   background-color: var(--secondary-color);
   color: var(--primary-color);
-
 }
 
-.btn{
+.btn {
   font-size: 1.5em;
 }
 
+.card-intro {
+  margin-top: 2em;
+  background-color: #efeeef;
+  padding: 2em;
+  height: 50%;
+  font-size: 1.5em;
+  // padding: 2em;
+  // justify-content: center;
+  text-align: center;
+}
 
-
-
-
-
-.card-text{
+.card-text {
   font-size: 1.5em;
 }
