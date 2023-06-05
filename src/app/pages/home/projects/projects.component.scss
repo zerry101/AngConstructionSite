@@ -1,0 +1,36 @@
+.project-bg-img {
+  // object-fit: cover;
+
+  object-fit: cover;
+  height: 70vh;
+}
+
+.img-title {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 30vh;
+  text-align: center;
+  color: white;
+  // left: 40vw;
+  font-size: 70px;
+  font-family: "Arya",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  // justify-content: center;
+}
+
+.card{
+  padding: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;}
+
+.projects{
+  margin-top: 3em;
+  left:0;
+  text-align: center;
+  justify-content: center;
+}
+
+.project-card-img{
+  object-fit: fill;
+}
