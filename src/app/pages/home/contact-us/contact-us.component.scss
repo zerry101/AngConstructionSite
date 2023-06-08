@@ -1,10 +1,46 @@
+
+*{
+  padding: none;
+}
+
 .contact-info{
   text-align: center ;;
   justify-content: center;
 }
 
 .info-text{
-  font-size: 2em;
+  font-size: 1.5em;
+
   text-align: center;
   justify-content: center;
 }
+
+.card-body{
+}
+
+.form-label{
+  left: 0px;
+}
+
+.form-bg{
+  background-color: #efeeef;
+}
+
+.form-img{
+  object-fit: cover;
+  // padding: none;
+}
+
+.form-control{
+  border: 3px solid black;
+}
+
+.form-group{
+  padding:auto;
+  margin: auto;
+  // width: 75%;
+  // text-align: center;
+  // border: solid 2px black;
+}
+
+
