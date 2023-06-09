@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {  FormGroup, FormBuilder } from '@angular/forms';
+import {  FormGroup, FormBuilder,Validators } from '@angular/forms';
+import { globalConstants } from 'src/app/Shared/constants';
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
@@ -15,15 +16,29 @@ export class ContactUsComponent implements OnInit {
 
   contactForm: FormGroup = new FormGroup({});
 
+  submitted:boolean=false;
+
   setupForm() {
     this.contactForm = this.fb.group({
-      Name: [""],
-      Email: [""],
-      PhoneNumber: [""],
+      Name: ["",[Validators.required]],
+      Email: ["",[Validators.required,Validators.pattern(globalConstants.EMAIL)]],
+      PhoneNumber: ["",[Validators.required,Validators.pattern(globalConstants.CONTACT_NO)]],
       Message: [""]
     })
 
 
+  }
+
+  onsubmit(){
+
+    this.submitted=true;
+    if(this.contactForm.invalid){
+      return false;
+    }
+    else{
+      console.log(this.contactForm.value);
+      return;
+    }
   }
 
   get NameControl() {
@@ -34,8 +49,8 @@ export class ContactUsComponent implements OnInit {
     return this.contactForm.get('Email');
   }
 
-  get PhoneControl() {
-    return this.contactForm.get('Phone');
+  get PhoneNumberControl() {
+    return this.contactForm.get('PhoneNumber');
   }
 
   get MessageControl() {
