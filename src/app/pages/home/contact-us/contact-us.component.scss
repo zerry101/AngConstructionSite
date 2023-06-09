@@ -18,29 +18,32 @@
 .card-body{
 }
 
-.form-label{
-  left: 0px;
-}
 
-.form-bg{
-  background-color: #efeeef;
-}
 
-.form-img{
-  object-fit: cover;
-  // padding: none;
+
+.bg-image {
+  background-image: url('../../../../assets/Green\ Modern\ Home\ Construction\ Logo\ \(1\).png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .form-control{
-  border: 3px solid black;
+  border: black 1.5px solid;
+
 }
 
-.form-group{
-  padding:auto;
-  margin: auto;
-  // width: 75%;
-  // text-align: center;
-  // border: solid 2px black;
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(88, 95, 88, 0.25);
 }
 
+#submitButton{
+  border: solid black 2px;
+  background-color: black;
+  color: white;
+}
 
+#submitButton:hover{
+  background-color: white;
+  color: black;
+}
