@@ -1,6 +1,6 @@
 <section>
   <div class="contact-info justify-content-center">
-    <div class="card" style="background-color: #efefef;">
+    <div class="card grey-bg" >
       <div class="card-body">
         <div class="row m-4">
           <div class="col-xl-4 col-md-4 col-sm-4">
@@ -24,6 +24,11 @@
         </div>
 
       </div>
+    </div>
+
+    <div *ngIf="submitted" class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Your form has been submitted succesfully</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 
     <div class="container-fluid px-5 my-5">
@@ -114,6 +119,7 @@
                       <button class=" btn  btn-lg " id="submitButton" type="submit">Submit</button>
                     </div>
                   </form>
+
                   <!-- End of contact form -->
 
                 </div>

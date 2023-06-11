@@ -37,8 +37,10 @@ export class ContactUsComponent implements OnInit {
     }
     else{
       console.log(this.contactForm.value);
+      this.submitted?this.contactForm.reset():false;
       return;
     }
+
   }
 
   get NameControl() {

@@ -10,6 +10,8 @@ font-weight: bolder;
 transform: scale(1);
 transform-origin: left;
 transition: ease-in-out .30s;
+height:3rem;
+
 
 }
 
@@ -20,7 +22,7 @@ a:hover{
   // bottom: 1px;
   border-radius: 5px;
   width: auto;
-  height:auto;
+  height:3rem;
   color: var(--secondary-color);
   background-color: var(--primary-color);
   font-weight: bolder;
@@ -33,6 +35,8 @@ a:hover{
   background-color: var(--primary-color);
   font-weight: bolder;
   border-radius: 5px;
+  height:3rem;
+
 
 
 
