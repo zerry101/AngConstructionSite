@@ -3,7 +3,11 @@
 }
 
 
-
+.home-header {
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+}
 // .grey-bg{
 //   background-color: #efeeef;
 //   }
@@ -33,3 +37,6 @@
     color: black;
   }
 
+  body::-webkit-scrollbar {
+    display: none;
+  }
