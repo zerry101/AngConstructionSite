@@ -21,6 +21,8 @@ export class RatesComponent {
 
   submitted:boolean=false;
 
+  submitButtonFalselyTriggered=false;
+
   setupForm() {
     this.contactForm = this.fb.group({
       Name: ["",[Validators.required]],
@@ -32,14 +34,19 @@ export class RatesComponent {
   }
 
   onsubmit(){
-
-    this.submitted=true;
     if(this.contactForm.invalid){
+      this.submitButtonFalselyTriggered=true
+
+      this.submitted=false;
       return false;
     }
     else{
+      this.submitted=true;
+      this.submitButtonFalselyTriggered=false;
       console.log(this.contactForm.value);
-      this.submitted?this.contactForm.reset():false;
+      console.log(this.contactForm.status);
+      this.contactForm.reset();
+
       return;
     }
 
