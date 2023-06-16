@@ -6,5 +6,77 @@
       </p>
     </div>
 
+    <div class="card m-5">
+      <div class="card grey-bg">
+        <div class="card-body">
+
+          <form id="contactForm" class="form-group" [formGroup]="contactForm" (ngSubmit)="onsubmit()">
+
+            <!-- Name Input formControlName="" -->
+            <div class="form-floating mb-3">
+              <input formControlName="Name" class="form-control" id="name" type="text" placeholder="Name"
+                [ngClass]="{'is-invalid':  (submitted || NameControl?.touched) && NameControl?.errors }" />
+              <label for="name">Name</label>
+              <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+            </div>
+
+            <!-- Email Input formControlName="" -->
+            <div class="form-floating mb-3">
+              <input formControlName="Email" class="form-control" id="emailAddress" type="email"
+                placeholder="Email Address"
+                [ngClass]="{'is-invalid':(EmailControl?.touched || submitted) && EmailControl?.errors }"
+                data-sb-validations="required,email" />
+              <label for="emailAddress">Email Address</label>
+
+              <div *ngIf="EmailControl?.hasError('required') && EmailControl?.touched" class="invalid-feedback"
+                data-sb-feedback="emailAddress:required">Email Address is required.</div>
+              <div *ngIf="EmailControl?.hasError('pattern')" class="invalid-feedback"
+                data-sb-feedback="emailAddress:email">Email Address is not valid.</div>
+            </div>
+            <div class="form-floating mb-3">
+              <input formControlName="PhoneNumber" class="form-control" id="phoneNumber" type="tel"
+                placeholder="Phone Number"
+                [ngClass]="{'is-invalid':  PhoneNumberControl?.touched && PhoneNumberControl?.errors }"
+                data-sb-validations="required,tel" />
+              <div *ngIf="PhoneNumberControl?.hasError('required') && PhoneNumberControl?.touched"
+                class="invalid-feedback" data-sb-feedback="phoneNumber:required">Phone Number is required.</div>
+              <div *ngIf="PhoneNumberControl?.hasError('pattern')" class="invalid-feedback"
+                data-sb-feedback="phoneNumber:tel">Phone Number is not valid.</div>
+
+
+              <label for="phoneNumber">Phone Number</label>
+            </div>
+
+            <!-- Message Input formControlName="" -->
+
+            <!-- Submit success message -->
+            <div class="d-none" id="submitSuccessMessage">
+              <div class="text-center mb-3">
+                <div class="fw-bolder">Form submission successful!</div>
+                <p>To activate this form, sign up at</p>
+                <a
+                  href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+              </div>
+            </div>
+
+            <!-- Submit error message -->
+            <div class="d-none" id="submitErrorMessage">
+              <div class="text-center text-danger mb-3">Error sending message!</div>
+            </div>
+
+            <!-- Submit button -->
+            <div class="d-grid">
+              <button class=" btn  btn-lg  " id="submitButton" type="submit">
+                <h2 style="word-spacing: 1rem;">
+                  <i style="padding: 0rem 1.5rem;" class="bi bi-cloud-download-fill"></i>
+                  Get Our Rates Now !</h2>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
+
+
 </section>

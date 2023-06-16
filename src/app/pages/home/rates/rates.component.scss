@@ -1,3 +1,35 @@
 .price-header{
   text-align: center;
 }
+
+
+
+// .grey-bg{
+//   background-color: #efeeef;
+//   }
+
+  .card-body,.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+
+
+  .form-control {
+    border: black 1.5px solid;
+  }
+
+  .form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(88, 95, 88, 0.25);
+  }
+
+  #submitButton {
+    border: solid black 2px;
+    background-color: black;
+    color: white;
+  }
+
+  #submitButton:hover {
+    background-color: white;
+    color: black;
+  }
+
