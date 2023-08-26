@@ -16,15 +16,16 @@
   justify-content: center;
 }
 
-.grey-bg{
-background-color: #efeeef;
+.grey-bg {
+  background-color: #efeeef;
 }
 
 .bg-image {
-  background-image: url("../../../../assets/Green\ Modern\ Home\ Construction\ Logo\ \(1\).png");
+  background-image: url(../../../assets/Green_Modern_Home_Construction_Logo_1.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  // Green\ Modern\ Home\ Construction\ Logo\ \(1\).png
 }
 
 .form-control {
@@ -35,10 +36,9 @@ background-color: #efeeef;
   box-shadow: 0 0 0 0.2rem rgba(88, 95, 88, 0.25);
 }
 
-
-.card-body,.card{
+.card-body,
+.card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 #submitButton {

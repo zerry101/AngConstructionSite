@@ -1,14 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
-import { ContactUsComponent } from './home/contact-us/contact-us.component';
-import { OurProcessComponent } from './home/our-process/our-process.component';
-import { ProjectsComponent } from './home/projects/projects.component';
-import { RatesComponent } from './home/rates/rates.component';
-import { WhereDoWeBuildComponent } from './home/where-do-we-build/where-do-we-build.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { OurProcessComponent } from './our-process/our-process.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { RatesComponent } from './rates/rates.component';
+import { WhereDoWeBuildComponent } from './where-do-we-build/where-do-we-build.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
-
 
 @NgModule({
   declarations: [
@@ -17,15 +15,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     OurProcessComponent,
     ProjectsComponent,
     RatesComponent,
-    WhereDoWeBuildComponent
+    WhereDoWeBuildComponent,
   ],
-  imports: [
-    CommonModule,
-    ReactiveFormsModule,
-    FormsModule
-  ],
-  exports:[
-
-  ]
+  imports: [CommonModule, ReactiveFormsModule, FormsModule],
+  exports: [],
 })
-export class PagesModule { }
+export class PagesModule {}
