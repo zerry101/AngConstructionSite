@@ -7,8 +7,10 @@
 * {
   font-family: "Poppins", sans-serif;
   // font-family: "Montserrat", sans-serif;
-  --primary-color: white;
-  --secondary-color: black;
+  --primary-color: #e6f4ea;
+  --secondary-color: #073042;
+  --tirtiary-color: #fffbe0;
+  // color: #073042;
   // e6f4ea
   // d2e3fc
   // fdd663
@@ -21,6 +23,10 @@
   margin: 0px;
   overflow-x: hidden;
   // overflow-y: hidden;
+}
+
+.text-colour {
+  color: var(--secondary-color);
 }
 
 .bg-prim {

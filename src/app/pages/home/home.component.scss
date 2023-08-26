@@ -21,6 +21,23 @@ div {
   object-fit: cover;
 }
 
+.card-body {
+  text-align: center;
+}
+
+.body-bg {
+  background-color: var(--primary-color);
+}
+
+.card-bg {
+  // background-color: #d6dcbb;
+  background-color: var(--tirtiary-color);
+}
+
+.card-list {
+  text-align: justify;
+}
+
 .intro-btn {
   width: 250px;
   height: 50px;
@@ -29,16 +46,14 @@ div {
   text-transform: uppercase;
   margin: auto;
   background-color: var(--secondary-color);
-  color: white;
+  color: var(--primary-color);
   font-size: 1em;
   margin-bottom: 0px;
 }
 
-
-
 .intro-btn:hover {
   color: var(--secondary-color);
-  background-color: white;
+  background-color: var(--tirtiary-color);
 }
 
 .card {
@@ -72,7 +87,7 @@ div {
 
 .card-intro {
   margin-top: 2em;
-  background-color: #efeeef;
+  background-color: var(--tirtiary-color);
   padding: 2em;
   height: 50%;
   font-size: 1.5em;
