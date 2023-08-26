@@ -6,6 +6,21 @@
 }
 .card {
   margin: 3em;
+  // background-color: var(--tirtiary-color);
+  background-color: var(--fourth-color);
+}
+
+.title-bg {
+  padding: 2em;
+  width: 100%;
+  color: var(--primary-color);
+  // background-color: var(--fourth-color);
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.body-bg {
+  background-color: var(--primary-color);
 }
 
 .work-process {
@@ -19,7 +34,7 @@
 }
 
 .txtbg {
-  background-color: #e6f4ea;
+  background-color: var(--tirtiary-color);
   // margin-left: 1rem;
 }
 
@@ -182,8 +197,14 @@
   padding: 5;
 }
 
+// .card-text {
+//   // background-color: var(--primary-color);
+//   background-color: var(--primary-color);
+// }
+
 .card-title {
   // height: 100%;
-  background-color: #d2e3fc;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
   border-radius: 5px;
 }

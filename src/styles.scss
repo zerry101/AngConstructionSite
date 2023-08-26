@@ -10,6 +10,7 @@
   --primary-color: #e6f4ea;
   --secondary-color: #073042;
   --tirtiary-color: #fffbe0;
+  --fourth-color: #d7effe;
   // color: #073042;
   // e6f4ea
   // d2e3fc
@@ -39,6 +40,14 @@
 
 .bg-sec {
   background-color: var(--secondary-color);
+}
+
+.bg-third {
+  background-color: var(--tirtiary-color);
+}
+
+.bg-fourth {
+  background-color: var(--fourth-color);
 }
 
 *::-webkit-scrollbar {

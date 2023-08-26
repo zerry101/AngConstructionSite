@@ -2,7 +2,16 @@ div {
   justify-content: center;
 }
 
+.title-bg {
+  padding: 2em;
+  width: 100%;
+  color: var(--primary-color);
+  // background-color: var(--fourth-color);
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .home-header {
+  padding: 1em;
   justify-content: center;
   text-align: center;
   font-size: 2.75rem;
@@ -22,7 +31,9 @@ div {
 }
 
 .card-body {
-  text-align: center;
+  text-align: justify;
+
+  background-color: var(--tirtiary-color);
 }
 
 .body-bg {
@@ -87,7 +98,7 @@ div {
 
 .card-intro {
   margin-top: 2em;
-  background-color: var(--tirtiary-color);
+  background-color: var(--fourth-color);
   padding: 2em;
   height: 50%;
   font-size: 1.5em;
@@ -97,5 +108,9 @@ div {
 }
 
 .card-text {
-  font-size: 1.5em;
+  // font-size: 1.5em;
+}
+
+.text-colour {
+  border-radius: 5px;
 }
