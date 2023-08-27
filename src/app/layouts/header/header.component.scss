@@ -10,13 +10,16 @@ a {
   transform: scale(1);
   transform-origin: left;
   transition: ease-in-out 0.3s;
-  height: 3rem;
+  height: auto;
 }
 
 .navbar-toggler-icon {
-  color: white;
-  background-color: white;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
   margin: 0px;
+  height: 2em;
+  width: 2em;
+  border-radius: 5px;
 }
 
 a:hover {
@@ -26,7 +29,7 @@ a:hover {
   // bottom: 1px;
   border-radius: 5px;
   width: auto;
-  height: 3rem;
+  height: auto;
   color: var(--secondary-color);
   background-color: var(--primary-color);
   font-weight: bolder;
