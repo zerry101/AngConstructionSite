@@ -25,10 +25,15 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  // width:   ;
+  height: auto;
+  object-fit: cover;
 }
 
 .form-control {
-  border: black 1.5px solid;
+  border: var(--secondary-color) 1.5px solid;
+  background-color: var(--tirtiary-color);
 }
 
 .form-control:focus {
@@ -41,12 +46,12 @@
 }
 
 #submitButton {
-  border: solid black 2px;
-  background-color: black;
-  color: white;
+  border: solid var(--secondary-color) 2px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 #submitButton:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }

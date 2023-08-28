@@ -1,39 +1,42 @@
-.price-header{
+.price-header {
   justify-content: center;
   text-align: center;
   font-size: 2.75rem;
+  width: 100%;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: var(--primary-color);
 }
-
-
 
 //   background-color: #efeeef;
 //   }
 
-  .card-body,.card{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.card-body,
+.card {
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
-  }
+.form-control {
+  border: var(--secondary-color) 1.5px solid;
+  color: var(--secondary-color);
+}
 
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(88, 95, 88, 0.25);
+}
 
-  .form-control {
-    border: black 1.5px solid;
-  }
+#submitButton {
+  border: solid black 2px;
+  background-color: black;
+  color: white;
+}
 
-  .form-control:focus {
-    box-shadow: 0 0 0 0.2rem rgba(88, 95, 88, 0.25);
-  }
+#submitButton:hover {
+  background-color: white;
+  color: black;
+}
 
-  #submitButton {
-    border: solid black 2px;
-    background-color: black;
-    color: white;
-  }
-
-  #submitButton:hover {
-    background-color: white;
-    color: black;
-  }
-
-  body::-webkit-scrollbar {
-    display: none;
-  }
+body::-webkit-scrollbar {
+  display: none;
+}

@@ -1,43 +1,44 @@
 <section class="bg-prim">
   <div class="contact-info justify-content-center">
-    <div class="card">
-      <div class="card-body bg-fourth">
-        <div class="row m-4">
-          <div class="col-xl-4 col-md-4 col-sm-4">
+    <!-- <div class=""> -->
+    <div class="card-body bg-fourth">
+      <div class="row m-4">
+        <div class="col-xl-4 col-md-4 col-sm-4">
+          <a class="info-text" href="tel:+91 345378765">
             <img
               src="../../../../assets/contact-us/contact-us-circle.png"
               height="70rem"
               width="70rem"
               alt=""
-              href="tel:+91 345378765"
             />
-            <p>
-              <a class="info-text">+91 345378765</a>
-            </p>
-          </div>
-          <div class="col-xl-4 col-md-4 col-sm-4">
-            <img
-              src="../../../../assets/contact-us/location-circle.png"
-              height="70rem"
-              width="70rem"
-              alt=""
-            />
-            <p class="info-text">718,City Gate,Vishala,Ahmedabad</p>
-          </div>
-          <div class="col-xl-4 col-md-4 col-sm-4">
-            <img
-              src="../../../../assets/contact-us/email-us-circle.png"
-              height="70rem"
-              width="70rem"
-              alt=""
-            />
-            <p>
-              <a href="mailto:xyz@gmail.com" class="info-text">xyz@gmail.com</a>
-            </p>
-          </div>
+            <p>+91 345378765</p>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-4 col-sm-4">
+          <img
+            src="../../../../assets/contact-us/location-circle.png"
+            height="70rem"
+            width="70rem"
+            alt=""
+          />
+          <p class="info-text">718,City Gate,Vishala,Ahmedabad</p>
+        </div>
+        <div class="col-xl-4 col-md-4 col-sm-4">
+          <p>
+            <a href="mailto:xyz@gmail.com" class="info-text">
+              <img
+                src="../../../../assets/contact-us/email-us-circle.png"
+                height="70rem"
+                width="70rem"
+                alt=""
+              />
+              <p>xyz@gmail.com</p>
+            </a>
+          </p>
         </div>
       </div>
     </div>
+    <!-- </div> -->
 
     <div
       *ngIf="submitted"
@@ -60,10 +61,10 @@
             <div class="card-body p-0">
               <div class="row g-0">
                 <div class="col-sm-6 d-none d-sm-block bg-image"></div>
-                <div class="col-sm-6 p-4">
+                <div class="col-sm-6 p-4 bg-fourth">
                   <div class="text-center">
-                    <div class="h3 fw-light">Contact Form</div>
-                    <p class="mb-4 text-muted">
+                    <div class="h3 fw-light text-colour-sec">Contact Form</div>
+                    <p class="mb-4 text-colour-sec">
                       Your details will not be shared
                     </p>
                   </div>
@@ -85,7 +86,7 @@
                     (ngSubmit)="onsubmit()"
                   >
                     <!-- Name Input formControlName="" -->
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-3 text-colour-sec">
                       <input
                         formControlName="Name"
                         class="form-control"
