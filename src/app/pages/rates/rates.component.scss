@@ -5,7 +5,7 @@
   width: 100%;
   padding: 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 //   background-color: #efeeef;
@@ -28,13 +28,14 @@
 
 #submitButton {
   border: solid black 2px;
-  background-color: black;
-  color: white;
+  background-color: orange;
+  color: black;
 }
 
 #submitButton:hover {
   background-color: white;
-  color: black;
+  border: solid orange 2px;
+  color: orange;
 }
 
 body::-webkit-scrollbar {

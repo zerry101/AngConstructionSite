@@ -21,7 +21,7 @@
 }
 
 .bg-image {
-  background-image: url("../../../assets/Green\ Modern\ Home\ Construction\ Logo\ \(1\).png");
+  background-image: url("../../../assets/home/INFINITY_BUILDERS_LOGO.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -46,12 +46,13 @@
 }
 
 #submitButton {
-  border: solid var(--secondary-color) 2px;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+  border: solid black 2px;
+  background-color: orange;
+  color: black;
 }
 
 #submitButton:hover {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: white;
+  border: solid orange 2px;
+  color: orange;
 }
