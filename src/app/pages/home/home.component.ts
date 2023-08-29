@@ -3,17 +3,15 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
+  constructor(public router: Router) {}
 
-  constructor(public router:Router){}
-
-  navigatetocontactus(){
+  navigatetocontactus() {
     this.router.navigate(['/contact-us']);
   }
-  navigatetorates(){
+  navigatetorates() {
     this.router.navigate(['/rates']);
   }
-
 }

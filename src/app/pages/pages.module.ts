@@ -7,6 +7,10 @@ import { ProjectsComponent } from './projects/projects.component';
 import { RatesComponent } from './rates/rates.component';
 import { WhereDoWeBuildComponent } from './where-do-we-build/where-do-we-build.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PagesComponent } from './pages.component';
+import { RouterModule } from '@angular/router';
+import { LayoutsModule } from '../layouts/layouts.module';
+import { PagesRoutingModule } from './pages-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,8 +20,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ProjectsComponent,
     RatesComponent,
     WhereDoWeBuildComponent,
+    PagesComponent,
   ],
-  imports: [CommonModule, ReactiveFormsModule, FormsModule],
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    FormsModule,
+    RouterModule,
+    LayoutsModule,
+    PagesRoutingModule,
+  ],
   exports: [],
 })
 export class PagesModule {}
