@@ -5,7 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { OurProcessComponent } from './our-process/our-process.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { RatesComponent } from './rates/rates.component';
-import { WhereDoWeBuildComponent } from './where-do-we-build/where-do-we-build.component';
+import { OurSevicesComponent } from './our-sevices/our-sevices.component';
 import { RouterModule, Routes } from '@angular/router';
 import { PagesComponent } from './pages.component';
 
@@ -36,8 +36,8 @@ const routes: Routes = [
         component: OurProcessComponent,
       },
       {
-        path: 'where-do-we-build',
-        component: WhereDoWeBuildComponent,
+        path: 'our-services',
+        component: OurSevicesComponent,
       },
       {
         path: 'rates',

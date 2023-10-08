@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { globalConstants } from 'src/app/Shared/constants';
+import { DataTransferService } from 'src/app/Shared/services/data-transfer.service';
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
   styleUrls: ['./contact-us.component.scss'],
 })
 export class ContactUsComponent implements OnInit {
-  constructor(public fb: FormBuilder) {}
+  constructor(public fb: FormBuilder, private dt: DataTransferService) {}
 
   ngOnInit() {
     this.setupForm();
@@ -43,8 +44,13 @@ export class ContactUsComponent implements OnInit {
     } else {
       this.submitted = true;
       this.submitButtonFalselyTriggered = false;
+      const formData = this.contactForm.value;
+      this.dt.postData(formData).subscribe((data) => {
+        console.log(data);
+      });
       console.log(this.contactForm.value);
       console.log(this.contactForm.status);
+
       this.contactForm.reset();
 
       return;
